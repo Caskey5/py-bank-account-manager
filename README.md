@@ -5,43 +5,33 @@ Managing users and accounts.
 
 * Simple Bank Managing app:
 
-|   .gitattributes           # Git configuration for attributes
-|   .gitignore               # Specifies files/folders to ignore in git
-|   constants.py             # Stores application-wide constants
-|   main.py                  # Main entry point for the application
-|   README.md                # Project documentation
-|   
-+---data_store               # Contains database and persistent storage
-|       users.db             # SQLite database for user/account data
-|       
-+---gui                      # Graphical user interface components
-|   |   account_manager_menu.py  # Account management GUI
-|   |   bank_menu.py             # Main bank menu GUI
-|   |   
-+---models                   # Data models for users and accounts
-|   |   user.py                  # User model definition
-|   |   __init__.py
-|   |   
-+---services                 # Business logic and service layer
-|   |   __init__.py
-|   |   
-|   +---repositories         # Database access and repository classes
-|   |   |   db_init.py           # Database initialization scripts
-|   |   |   login_repo.py         # Handles login-related DB operations
-|   |   |   signup_repo.py        # Handles signup-related DB operations
-|   |   |   __init__.py
-|   |   |   
-|           
-+---venv                     # Python virtual environment files
-|   |   |   signup_repo.py
-|   |   |   __init__.py
-|   |   |   signup_repo.py
-|   |   |   __init__.py
-|   |   |   
-|           
-+---venv
-|   |   .gitignore
-|   |   pyvenv.cfg
+```
+.
+├── .gitattributes           # Git configuration for attributes
+├── .gitignore               # Specifies files/folders to ignore in git
+├── constants.py             # Stores application-wide constants
+├── main.py                  # Main entry point for the application
+├── README.md               # Project documentation
+│
+├── data_store              # Contains database and persistent storage
+│   └── users.db           # SQLite database for user/account data
+│
+├── gui                     # Graphical user interface components
+│   ├── account_manager_menu.py  # Account management GUI
+│   └── bank_menu.py            # Main bank menu GUI
+│
+├── models                  # Data models for users and accounts
+│   ├── user.py            # User model definition
+│   └── __init__.py
+│
+└── services               # Business logic and service layer
+    ├── __init__.py
+    └── repositories      # Database access and repository classes
+        ├── db_init.py    # Database initialization scripts
+        ├── login_repo.py  # Handles login-related DB operations
+        ├── signup_repo.py # Handles signup-related DB operations
+        └── __init__.py
+```
 
 ## Installation
 
