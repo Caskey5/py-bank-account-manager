@@ -2,14 +2,15 @@ import sqlite3
 from constants import DB_PATH
 
 sql_create_table_users = """
-    CREATE TABLE IF NOT EXISTS users 
+    CREATE TABLE IF NOT EXISTS users
 (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         first_name TEXT NOT NULL,
         last_name TEXT NOT NULL,
         email TEXT NOT NULL UNIQUE,
         phone_number TEXT NOT NULL,
-        password TEXT NOT NULL
+        password TEXT NOT NULL,
+        balance REAL DEFAULT 0.0
 );
 """
 

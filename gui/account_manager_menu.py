@@ -24,9 +24,10 @@ def user_exists():
 
     login_user = User("", "", email, "", password)
     login_user_repo = LoginRepository(login_user)
-    if login_user_repo.authenticate_user(login_user):
-        print("Seccuess!")
-        bank_menu()
+    user_id = login_user_repo.authenticate_user(login_user)
+    if user_id:
+        print("Success!")
+        bank_menu(user_id)
     else:
         print("Something went wrong!")    
 
