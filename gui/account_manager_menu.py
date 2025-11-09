@@ -31,8 +31,6 @@ def user_exists():
         print("Something went wrong!")    
 
     
-
-
 def account_manager_menu():
     print("Account Manager Menu")
     

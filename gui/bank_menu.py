@@ -1,9 +1,12 @@
+from models import User
 
+TODO = """
+Add users full name method from User model and use it in the bank menu.
+"""
 
 
 def bank_menu():
     print("Welcome to the Bank Menu!")
-
     while True:
         print("\nOptions:")
         print("1. View Account Balance")

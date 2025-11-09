@@ -1,4 +1,3 @@
-from typing import List
 from constants import DB_PATH
 import sqlite3
 
