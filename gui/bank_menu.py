@@ -11,7 +11,7 @@ def account_balance(user_id):
             result = cursor.fetchone()
             if result:
                 balance = result[0]
-                print(f"\nYour current balance is: ${balance:.2f}")
+                print(f"\nYour current balance is: €{balance:.2f}")
             else:
                 print("\nUser not found!")
     except Exception as ex:
@@ -21,7 +21,7 @@ def account_balance(user_id):
 def deposit(user_id):
     """Dodaje novac na racun korisnika"""
     try:
-        amount = float(input("Enter the amount to deposit: $"))
+        amount = float(input("Enter the amount to deposit: €"))
         if amount <= 0:
             print("Amount must be greater than zero!")
             return
@@ -37,7 +37,7 @@ def deposit(user_id):
                 # Azuriraj balance
                 cursor.execute("UPDATE users SET balance = ? WHERE id = ?", (new_balance, user_id))
                 conn.commit()
-                print(f"\nDeposit successful! Your new balance is: ${new_balance:.2f}")
+                print(f"\nDeposit successful! Your new balance is: €{new_balance:.2f}")
             else:
                 print("\nUser not found!")
     except ValueError:
@@ -49,7 +49,7 @@ def deposit(user_id):
 def withdraw(user_id):
     """Povlaci novac sa racuna korisnika"""
     try:
-        amount = float(input("Enter the amount to withdraw: $"))
+        amount = float(input("Enter the amount to withdraw: €"))
         if amount <= 0:
             print("Amount must be greater than zero!")
             return
@@ -62,14 +62,14 @@ def withdraw(user_id):
             if result:
                 current_balance = result[0]
                 if current_balance < amount:
-                    print(f"\nInsufficient funds! Your current balance is: ${current_balance:.2f}")
+                    print(f"\nInsufficient funds! Your current balance is: €{current_balance:.2f}")
                     return
 
                 new_balance = current_balance - amount
                 # Azuriraj balance
                 cursor.execute("UPDATE users SET balance = ? WHERE id = ?", (new_balance, user_id))
                 conn.commit()
-                print(f"\nWithdrawal successful! Your new balance is: ${new_balance:.2f}")
+                print(f"\nWithdrawal successful! Your new balance is: €{new_balance:.2f}")
             else:
                 print("\nUser not found!")
     except ValueError:
