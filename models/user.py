@@ -7,13 +7,15 @@ class User:
             phone_number, 
             password
 ):
-            self.id: int = 0
+            self.user_id: int = 0
             self.first_name = first_name
             self.last_name = last_name 
             self.email = email
             self.phone_number = phone_number 
             self.password = password
             self.users = []
+            self.balance: float = 0.0
+            self.transactions = []
 
     def _full_name(self):
         return f'{self.first_name} {self.last_name}' 

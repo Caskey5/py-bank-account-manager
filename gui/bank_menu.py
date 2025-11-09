@@ -1,8 +1,14 @@
-from models import User
 
-TODO = """
-Add users full name method from User model and use it in the bank menu.
-"""
+
+
+def account_balance():
+    pass
+
+def deposit():
+    pass
+
+def withdraw():
+    pass
 
 
 def bank_menu():
@@ -18,13 +24,13 @@ def bank_menu():
 
         if choice == '1':
             print("Viewing account balance...")
-            # Here you would call the view balance functionality
+            account_balance()
         elif choice == '2':
             print("Depositing funds...")
-            # Here you would call the deposit functionality
+            deposit()
         elif choice == '3':
             print("Withdrawing funds...")
-            # Here you would call the withdraw functionality
+            withdraw()
         elif choice == '4':
             print("Exiting Bank Menu.")
             break
