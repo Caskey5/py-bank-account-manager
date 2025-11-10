@@ -18,16 +18,11 @@ Paths are relative to repository root.
 ├── gui/
 │   ├── account_manager_menu.py
 │   ├── bank_menu.py
-│   ├── account_manager_menu.cpython-314.pyc
-│   └── bank_menu.cpython-314.pyc
 ├── models/
 │   ├── user.py
-│   ├── __init__.py
-│   ├── user.cpython-314.pyc
-│   └── __init__.cpython-314.pyc
+│   └── __init__.py
 └── services/
    ├── __init__.py
-   ├── .gitignore
    └── repositories/
       ├── db_init.py
       ├── account_manager/
