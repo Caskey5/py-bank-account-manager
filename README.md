@@ -3,34 +3,43 @@ A simple Python application for managing bank users and accounts, featuring user
 Managing users and accounts.
 
 
-* Simple Bank Managing app:
+## Project structure
+
+Paths are relative to repository root.
 
 ```
-.
-├── .gitattributes           # Git configuration for attributes
-├── .gitignore               # Specifies files/folders to ignore in git
-├── constants.py             # Stores application-wide constants
-├── main.py                  # Main entry point for the application
-├── README.md               # Project documentation
-│
-├── data_store              # Contains database and persistent storage
-│   └── users.db           # SQLite database for user/account data
-│
-├── gui                     # Graphical user interface components
-│   ├── account_manager_menu.py  # Account management GUI
-│   └── bank_menu.py            # Main bank menu GUI
-│
-├── models                  # Data models for users and accounts
-│   ├── user.py            # User model definition
-│   └── __init__.py
-│
-└── services               # Business logic and service layer
-    ├── __init__.py
-    └── repositories      # Database access and repository classes
-        ├── db_init.py    # Database initialization scripts
-        ├── login_repo.py  # Handles login-related DB operations
-        ├── signup_repo.py # Handles signup-related DB operations
-        └── __init__.py
+D:.
+├── .gitattributes
+├── .gitignore
+├── constants.py
+├── main.py
+├── README.md
+├── tree.txt
+├── data_store/
+│   └── users.db
+├── gui/
+│   ├── account_manager_menu.py
+│   ├── bank_menu.py
+│   ├── account_manager_menu.cpython-314.pyc
+│   └── bank_menu.cpython-314.pyc
+├── models/
+│   ├── user.py
+│   ├── __init__.py
+│   ├── user.cpython-314.pyc
+│   └── __init__.cpython-314.pyc
+└── services/
+   ├── __init__.py
+   ├── .gitignore
+   ├── __init__.cpython-314.pyc
+   └── repositories/
+      ├── db_init.py
+      ├── account_manager/
+      │   ├── login_repo.py
+      │   └── signup_repo.py
+      └── bank_manager/
+         ├── balance_repo.py
+         ├── deposit_repo.py
+         └── withdraw_repo.py
 ```
 
 ## Installation
