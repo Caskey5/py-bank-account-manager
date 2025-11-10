@@ -1,7 +1,7 @@
 
 
 
-from dbm import sqlite3
+import sqlite3
 
 from constants import DB_PATH
 

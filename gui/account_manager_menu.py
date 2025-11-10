@@ -1,8 +1,8 @@
 
 from gui.bank_menu import bank_menu
 from models.user import User
-from services.repositories.login_repo import LoginRepository
-from services.repositories.signup_repo import SignUpRepository
+from services.repositories.account_manager.login_repo import LoginRepository
+from services.repositories.account_manager.signup_repo import SignUpRepository
 
 
 def create_user():

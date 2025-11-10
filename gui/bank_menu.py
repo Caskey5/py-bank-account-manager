@@ -1,6 +1,6 @@
-from services.repositories.balance_repo import account_balance
-from services.repositories.deposit_repo import deposit
-from services.repositories.withdraw_repo import withdraw
+from services.repositories.bank_manager.balance_repo import account_balance
+from services.repositories.bank_manager.deposit_repo import deposit
+from services.repositories.bank_manager.withdraw_repo import withdraw
 
 
 def bank_menu(user_id):
