@@ -37,7 +37,7 @@ Managing users and accounts.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/py-bank-account-manager.git
+   git clone https://github.com/Caskey5/py-bank-account-manager.git
    ```
 2. Navigate to the project directory and create a virtual environment:
    ```bash
