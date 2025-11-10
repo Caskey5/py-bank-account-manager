@@ -8,13 +8,11 @@ Managing users and accounts.
 Paths are relative to repository root.
 
 ```
-D:.
 ├── .gitattributes
 ├── .gitignore
 ├── constants.py
 ├── main.py
 ├── README.md
-├── tree.txt
 ├── data_store/
 │   └── users.db
 ├── gui/
@@ -30,7 +28,6 @@ D:.
 └── services/
    ├── __init__.py
    ├── .gitignore
-   ├── __init__.cpython-314.pyc
    └── repositories/
       ├── db_init.py
       ├── account_manager/
