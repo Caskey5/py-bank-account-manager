@@ -28,7 +28,7 @@ def deposit(user_id):
 
         with sqlite3.connect(DB_PATH) as conn:
             cursor = conn.cursor()
-            # Prvo povuci trenutni balance
+            # Trenutni balance
             cursor.execute("SELECT balance FROM users WHERE id = ?", (user_id,))
             result = cursor.fetchone()
             if result:
@@ -56,7 +56,7 @@ def withdraw(user_id):
 
         with sqlite3.connect(DB_PATH) as conn:
             cursor = conn.cursor()
-            # Prvo povuci trenutni balance
+            # Trenutni balance
             cursor.execute("SELECT balance FROM users WHERE id = ?", (user_id,))
             result = cursor.fetchone()
             if result:

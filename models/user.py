@@ -13,9 +13,6 @@ class User:
             self.email = email
             self.phone_number = phone_number 
             self.password = password
-            # self.users = []
-            # self.balance: float = 0.0
-            # self.transactions = []
 
     def _full_name(self):
         return f'{self.first_name} {self.last_name}' 
